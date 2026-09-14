@@ -1,174 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loïc Boni — Data Analyst</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loïc Boni - Data Analyst</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-top">
+            <span class="logo">Loïc Boni</span>
+            <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-  <nav class="nav">
-    <a href="#top" class="nav-mark">LB</a>
-    <div class="nav-links">
-      <a href="#travaux">Projets</a>
-      <a href="#parcours">Parcours</a>
-      <a href="#competences">Compétences</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    <header class="hero" id="about">
+        <div class="hero-text">
+            <p class="hello">Bonjour, moi c'est</p>
+            <h1>Loïc Boni</h1>
+            <p class="tagline">Data Analyst — SQL · Python · Power BI</p>
+            <p class="bio">De la modélisation à la restitution, je transforme des données brutes en décisions : schémas OLAP, requêtes SQL avancées, dashboards Power BI. Ancré dans le secteur bancaire depuis plusieurs années et aujourd'hui en formation Data Analyst chez Simplon, je mets cette rigueur au service de la donnée.</p>
+            <div class="links">
+                <a href="https://github.com/loicbonicontact-gif" target="_blank" class="btn btn-primary">GitHub</a>
+                <a href="https://www.linkedin.com/in/lo%C3%AFc-boni-163a83172/" target="_blank" class="btn btn-outline">LinkedIn</a>
+            </div>
+        </div>
+    </header>
 
-  <header id="top" class="hero">
-    <p class="query">-- select * from profil where objectif = 'stage data analyst';</p>
-    <h1>Loïc Boni</h1>
-    <p class="role">Data Analyst — SQL · Python · Power BI</p>
-    <p class="pitch">
-      De la modélisation à la restitution, je transforme des données brutes en décisions :
-      schémas OLAP, requêtes SQL avancées, dashboards Power BI. Ancré dans le secteur bancaire
-      depuis 4 ans, je cherche à mettre cette rigueur au service de la donnée.
-    </p>
-    <div class="hero-actions">
-      <span class="badge">Disponible pour un stage · nov. 2026 – avr. 2027</span>
-      <div class="hero-links">
-        <a href="#travaux" class="btn btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn btn-ghost">Me contacter</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-
-    <section id="travaux" class="section">
-      <p class="eyebrow">-- 04 projets sélectionnés</p>
-      <h2>Projets</h2>
-
-      <div class="work-grid">
-        <article class="work-card reveal">
-          <h3>Mission ClassicModels — Schéma OLAP & dashboard Power BI</h3>
-          <p>
-            Migration de la base ClassicModels vers un schéma en étoile (tables de faits et
-            dimensions), puis dashboard Power BI 4 pages avec mesures DAX et test de recette
-            d'actualisation automatique.
-          </p>
-          <ul class="tags">
-            <li>MySQL</li><li>Power BI</li><li>DAX</li>
-          </ul>
-        </article>
-
-        <article class="work-card reveal">
-          <h3>CinéStream — Structures SQL avancées</h3>
-          <p>
-            Pour un cas d'usage de catalogue de streaming, résolution de requêtes complexes via
-            sous-requêtes, CTE, vues et Window Functions, jusqu'à une recommandation
-            d'investissement chiffrée.
-          </p>
-          <ul class="tags">
-            <li>SQL</li><li>DBeaver</li><li>SQLite</li>
-          </ul>
-        </article>
-
-        <article class="work-card reveal">
-          <h3>DealFlow — Modélisation MERISE & indicateurs de ventes</h3>
-          <p>
-            Conception d'un schéma relationnel (MCD/MLD) pour centraliser les ventes d'une
-            startup, déploiement MySQL puis script d'interrogation analytique livrant les KPI
-            de décision.
-          </p>
-          <ul class="tags">
-            <li>MERISE</li><li>MySQL</li><li>SQL</li>
-          </ul>
-        </article>
-
-        <article class="work-card reveal">
-          <h3>DataInsight Solutions — Application data sur Streamlit</h3>
-          <p>
-            App multi-pages avec authentification, filtres dynamiques et visualisations
-            interactives, versionnée sur GitHub et déployée sur Streamlit Cloud.
-          </p>
-          <ul class="tags">
-            <li>Python</li><li>Streamlit</li><li>Plotly</li>
-          </ul>
-        </article>
-      </div>
+    <section class="skills" id="skills">
+        <h2>Compétences & centres d'intérêt</h2>
+        <div class="tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Python & Pandas</span>
+            <span class="tag">Power BI / DAX</span>
+            <span class="tag">Data Visualisation</span>
+            <span class="tag">MERISE / OLAP</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Machine Learning</span>
+        </div>
     </section>
 
-    <section id="parcours" class="section">
-      <p class="eyebrow">-- parcours</p>
-      <h2>Expérience & formation</h2>
-
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <p class="timeline-date">2026 – 2027</p>
-          <h3>Data Analyst — Titre RNCP niveau 6</h3>
-          <p>Simplon.co, Villeurbanne · Concepteur Développeur en IA et analyse Big Data</p>
+    <section class="projects" id="projects">
+        <h2>Projets récents</h2>
+        <div class="project-grid">
+            <article class="project-card">
+                <div class="project-body">
+                    <h3>ClassicModels</h3>
+                    <p>Modélisation en étoile (MySQL) et dashboard Power BI — logistique & stock.</p>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-body">
+                    <h3>World Happiness Report</h3>
+                    <p>Analyse 2021-2025 en équipe, présentation interactive et dashboard Power BI.</p>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-body">
+                    <h3>Online Retail</h3>
+                    <p>541 909 transactions analysées : CA, saisonnalité, recommandations business.</p>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-body">
+                    <h3>Netflix EDA</h3>
+                    <p>Exploration de données et dashboard Power BI en binôme.</p>
+                </div>
+            </article>
         </div>
-        <div class="timeline-item reveal">
-          <p class="timeline-date">2025 – 2026</p>
-          <h3>Technicien Support Monétique</h3>
-          <p>AVEM Groupe, Lyon · Environnement bancaire réglementé (PCI-DSS, RGPD)</p>
-        </div>
-        <div class="timeline-item reveal">
-          <p class="timeline-date">2021 – 2025</p>
-          <h3>Développeur Web freelance</h3>
-          <p>Sites vitrines et e-commerce, suivi d'audience via Google Analytics</p>
-        </div>
-      </div>
+        <a href="https://github.com/loicbonicontact-gif" target="_blank" class="see-more">Voir tous mes projets sur GitHub →</a>
     </section>
 
-    <section id="competences" class="section">
-      <p class="eyebrow">-- compétences</p>
-      <h2>Ce que je maîtrise</h2>
+    <section class="parcours" id="parcours">
+        <h2>Parcours</h2>
 
-      <div class="skills-grid">
-        <div class="skill-group reveal">
-          <h3>Data & analyse</h3>
-          <p>SQL avancé, Python (pandas), Power BI, DAX, data storytelling</p>
+        <h3 class="parcours-subtitle">Formation</h3>
+        <div class="timeline-item">
+            <span class="timeline-date">2026 - En cours</span>
+            <div>
+                <strong>Formation Data Analyst — Simplon (Villeurbanne)</strong>
+                <p>Certification visée : Concepteur Développeur en IA et analyse Big Data (RNCP niveau 6). SQL, Python (Pandas, Plotly), Power BI, Git/GitHub, Google Colab.</p>
+            </div>
         </div>
-        <div class="skill-group reveal">
-          <h3>Modélisation</h3>
-          <p>MERISE, schéma en étoile, OLAP, DDL/DML</p>
+
+        <h3 class="parcours-subtitle">Expériences professionnelles</h3>
+        <div class="timeline-item">
+            <span class="timeline-date">2025 - 2026</span>
+            <div>
+                <strong>Technicien Support Monétique — AVEM Groupe (Lyon)</strong>
+                <p>Environnement bancaire réglementé (PCI-DSS, RGPD), diagnostic et suivi d'incidents.</p>
+            </div>
         </div>
-        <div class="skill-group reveal">
-          <h3>ML & Cloud</h3>
-          <p>Machine Learning supervisé, architectures multi-agents, GCP, AWS S3</p>
+        <div class="timeline-item">
+            <span class="timeline-date">2021 - 2025</span>
+            <div>
+                <strong>Développeur Web freelance</strong>
+                <p>Sites vitrines et e-commerce, suivi d'audience via Google Analytics.</p>
+            </div>
         </div>
-        <div class="skill-group reveal">
-          <h3>Web</h3>
-          <p>HTML, CSS, JavaScript, PHP, WordPress, Analytics</p>
+        <div class="timeline-item">
+            <span class="timeline-date">Avant 2021</span>
+            <div>
+                <strong>Ingénieur son & gérant de studio d'enregistrement</strong>
+                <p>Un métier où la précision et l'écoute font toute la différence — la même exigence que dans l'analyse de données.</p>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="section about">
-      <p class="eyebrow">-- à propos</p>
-      <p class="about-text reveal">
-        Avant la data, j'ai passé plusieurs années comme ingénieur son et gérant d'un studio
-        d'enregistrement — un métier où la précision et l'écoute font toute la différence.
-        Je retrouve la même exigence dans l'analyse de données. Passionné d'IA, d'aviation et
-        de voyages, je reste en veille permanente sur les nouvelles technologies.
-      </p>
+    <section class="contact" id="contact">
+        <h2>Me contacter</h2>
+        <form action="mailto:loic.boni@yahoo.com" method="post" enctype="text/plain" class="contact-form">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
     </section>
 
-    <section id="contact" class="section contact">
-      <p class="eyebrow">-- contact</p>
-      <h2>Discutons</h2>
-      <div class="contact-grid">
-        <a href="mailto:loic.boni@yahoo.com" class="contact-link">loic.boni@yahoo.com</a>
-        <a href="https://www.linkedin.com/in/lo%C3%AFc-boni-163a83172/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
-        <a href="https://github.com/loicbonicontact-gif" target="_blank" rel="noopener" class="contact-link">GitHub</a>
-        <span class="contact-link contact-static"></span>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>Loïc Boni - Data Analyst - Lyon, France</p>
-  </footer>
-
-  <script src="interactions.js"></script>
+    <footer>
+        <p>Basé à Lyon, France</p>
+        <p><a href="mailto:loic.boni@yahoo.com">loic.boni@yahoo.com</a></p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
